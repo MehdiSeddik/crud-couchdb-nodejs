@@ -1,12 +1,14 @@
 const fs = require("fs");
 const csv = require("csv-parser");
 const nano = require("nano");
+const dotenv = require("dotenv");
+dotenv.config();
 
-const dbName = "contacts";
+const dbName = process.env.DB_NAME ?? "contacts";
 const inputFilePath = "./assets/contacts.csv";
 
 // Connect to the CouchDB database
-const dbUrl = "http://admin:123poi@127.0.0.1:5984";
+const dbUrl = process.env.DB_URL ?? "http://admin:123poi@127.0.0.1:5984";
 const db = nano(dbUrl).use(dbName);
 
 // Read the CSV file and insert documents into CouchDB

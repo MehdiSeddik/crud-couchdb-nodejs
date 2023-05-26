@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "d5c49a45-e97f-4320-91d6-2d67dea446be",
+		"name": "Contacts crud nosql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26542318",
+		"_collection_link": "https://red-equinox-774543.postman.co/workspace/GameTrip~64c3246c-41b9-405f-a16f-d130e40bd162/collection/26542318-d5c49a45-e97f-4320-91d6-2d67dea446be?action=share&creator=26542318&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODI5NDk4ODgsImV4cCI6MTY4Mjk1MzQ4OCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.T6xCVDxgQnEBgnBEMhZCijkQ0yAYoqG7W6I6rl7YBV3C-YWbCVJFjBtXqnuqbGKOMXbR-co3oGVbls1LGf8uLLDXvtvKKtpXHo4Ad-cdVuALVmiyONnLmB-HCYYQdK_2NSYQiLtySFRLwgdvLJUpUVAp-nfYrLwHXKz9JHFaVFh3qhWj4Y-BhWp1ZBBLiIn-Q6l6iNHrRtEWAoKGvXuwQOqMC1LGoaA27coq_7l-zTUkOn7TtC5NB5Kuj0tDV4uZz9kBpMA9lGEalo2GbBJJm-Bu61XD4wxujRCd1TpBmQ2nUa-PLlE5svGUkPBSXjrfCePm8wfMdLJ9HTKmqNoXqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8889/contacts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"contacts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODI5NDk4ODgsImV4cCI6MTY4Mjk1MzQ4OCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.T6xCVDxgQnEBgnBEMhZCijkQ0yAYoqG7W6I6rl7YBV3C-YWbCVJFjBtXqnuqbGKOMXbR-co3oGVbls1LGf8uLLDXvtvKKtpXHo4Ad-cdVuALVmiyONnLmB-HCYYQdK_2NSYQiLtySFRLwgdvLJUpUVAp-nfYrLwHXKz9JHFaVFh3qhWj4Y-BhWp1ZBBLiIn-Q6l6iNHrRtEWAoKGvXuwQOqMC1LGoaA27coq_7l-zTUkOn7TtC5NB5Kuj0tDV4uZz9kBpMA9lGEalo2GbBJJm-Bu61XD4wxujRCd1TpBmQ2nUa-PLlE5svGUkPBSXjrfCePm8wfMdLJ9HTKmqNoXqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8889/contact/02b80ae6c4f2d845a0f32e1b0a497f06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"contact",
+						"02b80ae6c4f2d845a0f32e1b0a497f06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODI5NDk4ODgsImV4cCI6MTY4Mjk1MzQ4OCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.T6xCVDxgQnEBgnBEMhZCijkQ0yAYoqG7W6I6rl7YBV3C-YWbCVJFjBtXqnuqbGKOMXbR-co3oGVbls1LGf8uLLDXvtvKKtpXHo4Ad-cdVuALVmiyONnLmB-HCYYQdK_2NSYQiLtySFRLwgdvLJUpUVAp-nfYrLwHXKz9JHFaVFh3qhWj4Y-BhWp1ZBBLiIn-Q6l6iNHrRtEWAoKGvXuwQOqMC1LGoaA27coq_7l-zTUkOn7TtC5NB5Kuj0tDV4uZz9kBpMA9lGEalo2GbBJJm-Bu61XD4wxujRCd1TpBmQ2nUa-PLlE5svGUkPBSXjrfCePm8wfMdLJ9HTKmqNoXqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"crud create title\",\r\n    \"name\": \"crud create name\",\r\n    \"adress\": \"crud create adress\",\r\n    \"realAdress\": \"crud create realAdress\",\r\n    \"departement\": \"crud create departement\",\r\n    \"country\": \"crud create country\",\r\n    \"tel\": \"crud create tel\",\r\n    \"email\": \"crud create email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8889/contact/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"contact",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2ODI5NDk4ODgsImV4cCI6MTY4Mjk1MzQ4OCwicm9sZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJ1c2VybmFtZSI6ImFkbWluIn0.T6xCVDxgQnEBgnBEMhZCijkQ0yAYoqG7W6I6rl7YBV3C-YWbCVJFjBtXqnuqbGKOMXbR-co3oGVbls1LGf8uLLDXvtvKKtpXHo4Ad-cdVuALVmiyONnLmB-HCYYQdK_2NSYQiLtySFRLwgdvLJUpUVAp-nfYrLwHXKz9JHFaVFh3qhWj4Y-BhWp1ZBBLiIn-Q6l6iNHrRtEWAoKGvXuwQOqMC1LGoaA27coq_7l-zTUkOn7TtC5NB5Kuj0tDV4uZz9kBpMA9lGEalo2GbBJJm-Bu61XD4wxujRCd1TpBmQ2nUa-PLlE5svGUkPBSXjrfCePm8wfMdLJ9HTKmqNoXqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"crud create title\",\r\n    \"name\": \"crud create name\",\r\n    \"adress\": \"crud create adress edited field\",\r\n    \"realAdress\": \"crud create realAdress\",\r\n    \"departement\": \"crud create departement\",\r\n    \"country\": \"crud create country\",\r\n    \"tel\": \"crud create tel\",\r\n    \"email\": \"crud create email\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8889/contact/0fdd4e990fafce9cc4138eee334949ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8889",
+					"path": [
+						"contact",
+						"0fdd4e990fafce9cc4138eee334949ca"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
