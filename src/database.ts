@@ -2,9 +2,8 @@ import nano, { DocumentScope } from "nano";
 import dotenv from "dotenv";
 dotenv.config();
 
-const server = nano(
-  process.env.DB_URL ?? "http://admin:123poi@127.0.0.1:5984"
-);
+const dbUrl = process.env.DB_URL ?? "http://admin:123poi@127.0.0.1:5984";
+const server = nano(dbUrl);
 const dbName = process.env.DB_NAME ?? "contacts";
 
 // Connect to the CouchDB database
