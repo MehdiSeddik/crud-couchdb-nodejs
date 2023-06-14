@@ -21,8 +21,6 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "node ./build/index.js",
     "dev": "npx nodemon ./src/index.ts",
     "imp": "node parseCsv.js"
   }
