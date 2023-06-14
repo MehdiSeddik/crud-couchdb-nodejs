@@ -43,7 +43,7 @@ Follow these steps to install and run the application:
 4. Data import
 
 > **Warning**
-> Please make the databases `contacts` and `gadm` exist
+> Please make sure the databases `contacts` and `gadm` exist
 
   to import data into the couchDB instance, you can run the following command
 
