@@ -11,7 +11,7 @@ Before running this application, ensure you have the following prerequisites ins
 - Yarn: [Install Yarn](https://classic.yarnpkg.com/en/docs/install) ( you can easily install it with `npm install -g yarn` )
 - CouchDB: [Install CouchDB](https://couchdb.apache.org/#download)
 - Git: [Install Git](https://git-scm.com/downloads)
-   (eventually you can config git with `git config --global user.name "Your Name"` and `git config --global user.email ")
+  (eventually you can config git with `git config --global user.name "Your Name"` and `git config --global user.email ")
 
 ## Installation
 
@@ -32,14 +32,15 @@ Follow these steps to install and run the application:
    yarn install
    ```
 
+3. Setup database
+
    Before running the application, you need to configure the CouchDB connection settings.
-   in the .env file, edit the couchdb url and the database name according to your couchdb configuration
-   make sure the db exists in your couchdb instance.
+   in the .env file, edit the couchdb url and port according to your couchdb configuration.
 
-   To create the database, head on to http://localhost:5984/\_utils/#login, login with the admin credentials you created
-   when installing couchdb, and create a new database with the name you specified in the .env file
+   To create the databases, head on to http://localhost:5984/\_utils/#login, login with the admin credentials you created
+   when installing couchdb, and create two new databases with the following names: contacts and gadm
 
-3. Data import
+4. Data import
 
    to import the csv data into the couchDB instance, you can run the following command
 
@@ -51,19 +52,13 @@ Follow these steps to install and run the application:
 
 ### Usage
 
-To start the application, run the following commands:
-Build the code
+To start the application, run the following command:
+
 ```bash
-yarn build
+yarn dev
 ```
 
-then
-Start server
-```bash
-yarn start
-```
-
-The application will be accessible at http://localhost:8889.
+The application will be accessible at http://localhost:[PORT].
 
 API Endpoints
 The following API endpoints are available:
