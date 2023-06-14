@@ -37,7 +37,7 @@ Follow these steps to install and run the application:
    Before running the application, you need to configure the CouchDB connection settings.
    in the .env file, edit the couchdb url and port according to your couchdb configuration.
 
-   To create the databases, head on to http://localhost:5984/\_utils/#login, login with the admin credentials you created
+   To create the databases, head on to http://localhost:5984/_utils/, login with the admin credentials you created
    when installing couchdb, and create two new databases with the following names: contacts and gadm
 
 4. Data import
