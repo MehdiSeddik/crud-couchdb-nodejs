@@ -14,6 +14,7 @@ const contacts_db = nano(dbUrl).use("contacts");
 
 // Read the CSV file and insert documents into CouchDB
 console.log("Importing contacts.csv data into CouchDB");
+
 fs.createReadStream(contacts_csv)
   .pipe(csv())
   .on("data", async (row) => {
@@ -45,7 +46,7 @@ data.features.forEach((feature) => {
     if (err) {
       console.log("Error importing data:", err);
     } else {
-      console.log("Data imported successfully:");
+      console.log("Data imported successfully");
     }
   });
 });
