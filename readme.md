@@ -38,17 +38,20 @@ Follow these steps to install and run the application:
    in the .env file, edit the couchdb url and port according to your couchdb configuration.
 
    To create the databases, head on to http://localhost:5984/_utils/, login with the admin credentials you created
-   when installing couchdb, and create two new databases with the following names: contacts and gadm
+   when installing couchdb, and create two new databases with the following names: `contacts` and `gadm`
 
 4. Data import
 
-   to import the csv data into the couchDB instance, you can run the following command
+> **Warning**
+> Please make the databases `contacts` and `gadm` exist
+
+  to import data into the couchDB instance, you can run the following command
 
    ```bash
    yarn imp
    ```
 
-   it will run a script that parse the csv file and insert the data into the database specified in the .env file
+   it will run a script that parse csv and json files and insert the data into the databases.
 
 ### Usage
 
