@@ -22,6 +22,6 @@
   },
   "scripts": {
     "dev": "npx nodemon ./src/index.ts",
-    "imp": "node parseCsv.js"
+    "imp": "node importData.js"
   }
 }
